@@ -29,18 +29,18 @@ namespace Ucu.Poo.Restaurant
 
         public void AddToOrder(Dish dish)
         {
-            this.order.Add(dish);
+            order.Add(dish);
         }
         
         public void Free()
         {
-            this.order.Clear();
-            this.IsOccupied = false;
+            order.Clear();
+            IsOccupied = false;
         }
         
         public bool HasOrders()
         {
-            return this.order.Count > 0;
+            return order.Count > 0;
         }
     }
 }
